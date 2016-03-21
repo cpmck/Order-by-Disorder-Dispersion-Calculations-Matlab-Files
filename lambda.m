@@ -1,3 +1,0 @@
-
-energiesCalc
-energiesCalc2
