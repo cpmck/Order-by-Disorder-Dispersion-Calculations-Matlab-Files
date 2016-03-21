@@ -1,8 +1,8 @@
 
 function O = OM(l,m)
 format long;
-%UNTITLED Summary of this function goes here
-%   Detailed explanation goes here
+% OM() returns the Stevens equivalent operator O_l^m
+% source:  E Bauer and M Rotter. Magnetism of complex metallic alloys: crystalline electric field effects (2007)
 J = 4;
 
 %row vector of m values
