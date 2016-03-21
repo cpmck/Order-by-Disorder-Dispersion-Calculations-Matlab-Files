@@ -41,6 +41,7 @@ atomBp = evalin('base','atomBp');
 
 
 %define Jex Matrix within this function Energies()
+%The functions JAA to JApBp were calculated by Professor Andrew Huxley
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 JAA = @(Q) JAA1*cos(2*pi*dot(Q,b)) + JAA2*cos(2*pi*dot(Q,a)) + JAA3*cos(2*pi*dot(Q,c));
 JAB = @(Q) JAB1*cos(2*pi*dot(Q,a)/2)*exp(2*pi*1i*dot(Q,r1)) +JAB2*cos(2*pi*dot(Q,a))*exp(2*pi*1i*dot(Q,(c+r2)));
@@ -69,7 +70,6 @@ nK = JAB([0;0;0]) + JABp([0;0;0]);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 disp('Calculating Moments');
 momCalc = moments( H, beta, phi, nL, nK );
-
 
 
 
